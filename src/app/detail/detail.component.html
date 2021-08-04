@@ -1,0 +1,24 @@
+<button id="back" (click)=back()>Back</button>
+<div *ngFor="let index of countryDitails">
+   
+    <div id="detail" *ngIf="index.name===countryName">
+       
+        <img [src]="index.flag">
+        <div id="country">
+            <div id="left" class="box">
+                <h1>{{index.name}}</h1>
+                <h3>Native Name: {{index.nativeName}}</h3>
+                <h3>Region: {{index.region}}</h3>
+                <h3>Population: {{index.population | number:"1.0"}}</h3>
+                <h3>Sub Region : {{index.subRegion}}</h3>
+                <h3>Capital: {{index.capital}}</h3>
+                
+            </div>
+            <div id="right" class="box">
+                <h3>Top Level Domain: {{index.topLevelDomain}}</h3>
+                <h3>Currencies: {{index.Currencies}}</h3>
+                <h3> Language: {{index.language}}</h3>
+            </div>
+        </div> 
+    </div>
+</div>

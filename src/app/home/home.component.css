@@ -1,0 +1,33 @@
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 1px 1px 1px 1px;
+    /* box-shadow: 0px -8px 10px 10px lightgrey; */
+    background-color: white;
+    filter: brightness(120%);
+    
+}
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+app-country-card {
+    
+    border: solid black;
+    display:flex;
+    height: auto;
+    width:1100px ;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 7%;
+
+    
+}

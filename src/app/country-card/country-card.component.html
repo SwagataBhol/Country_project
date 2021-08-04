@@ -1,0 +1,11 @@
+
+<div (click)="onClick(index.name)" id="imgdiv" *ngFor="let index of country" >
+    <img width=250 [src]="index.flag">
+    <div id="description">
+       <h4>{{index.name}}</h4>
+        <h5>Population: {{index.population | number:"1.0"}}</h5>
+        <h5>Region: {{index.region}}</h5>
+        <h5>Capital: {{index.capital}}</h5>
+        
+   
+
