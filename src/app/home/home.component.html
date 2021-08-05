@@ -4,12 +4,16 @@
        Where in the world?
       </h2>
      <h2>
-      <button>
+      <button (click)="darkMode($event)">
         Dark Mode
       </button>
       
      </h2>
     </header>
-  
+
   </div>
+  
+  <input #search type="text"  placeholder="search...">
+  <button id="searchButton" type="reset" (click)="searchCountry(search.value)">Enter</button>
+  
   <app-country-card  [country]="data"></app-country-card>

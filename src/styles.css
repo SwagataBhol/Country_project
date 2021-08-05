@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+.darkMode{
+    background-color: hsl(207, 26%, 17%);
+    color: blanchedalmond;
+}

@@ -1,14 +1,7 @@
-/* #container{
-    border: solid black;
-    display:flex;
-    height: auto;
-    width:1100px ;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 7%;
-} */
+
 #imgdiv{
     /* border: solid black; */
+    /* box-shadow: 0px -8px 10px 10px lightgrey; */
     box-shadow: 0px -8px 10px 10px lightgrey;
     width:190px;
     height: 380px;

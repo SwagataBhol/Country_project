@@ -5,9 +5,9 @@ header{
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
-    box-shadow: 1px 1px 1px 1px;
+    box-shadow: 1px 1px 1px 1px inherit;
     /* box-shadow: 0px -8px 10px 10px lightgrey; */
-    background-color: white;
+    background-color:inherit;
     filter: brightness(120%);
     
 }
@@ -18,10 +18,11 @@ button {
     cursor:pointer;
     overflow: hidden;
     outline:none;
+    color:inherit;
 }
 app-country-card {
     
-    border: solid black;
+    
     display:flex;
     height: auto;
     width:1100px ;
@@ -30,4 +31,15 @@ app-country-card {
     margin: 7%;
 
     
+}
+input{
+    height: 35px;
+    width: 200px;
+    margin-top: 2%;
+    margin-left: 7%;
+}
+#searchButton{
+    height: 30px;
+    width: 50px;
+    border: inherit;
 }

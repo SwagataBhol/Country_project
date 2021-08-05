@@ -10,14 +10,14 @@
                 <h3>Native Name: {{index.nativeName}}</h3>
                 <h3>Region: {{index.region}}</h3>
                 <h3>Population: {{index.population | number:"1.0"}}</h3>
-                <h3>Sub Region : {{index.subRegion}}</h3>
+                <h3>Sub Region : {{index.subregion}}</h3>
                 <h3>Capital: {{index.capital}}</h3>
                 
             </div>
             <div id="right" class="box">
                 <h3>Top Level Domain: {{index.topLevelDomain}}</h3>
-                <h3>Currencies: {{index.Currencies}}</h3>
-                <h3> Language: {{index.language}}</h3>
+                <h3>Currencies: {{index.currencies[0].name}}</h3>
+                <h3> Language: {{index.languages[0].nativeName}}</h3>
             </div>
         </div> 
     </div>
