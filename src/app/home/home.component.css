@@ -6,7 +6,7 @@ header{
     padding-left: 5%;
     padding-right: 5%;
     box-shadow: 1px 1px 1px 1px inherit;
-    /* box-shadow: 0px -8px 10px 10px lightgrey; */
+    
     background-color:inherit;
     filter: brightness(120%);
     
@@ -34,7 +34,7 @@ app-country-card {
 }
 input{
     height: 35px;
-    width: 200px;
+    width: 250px;
     margin-top: 2%;
     margin-left: 7%;
 }
@@ -42,4 +42,10 @@ input{
     height: 30px;
     width: 50px;
     border: inherit;
+   
+}
+#region{
+    margin-left: 40%;
+    height: 35px;
+    width: 200px;
 }

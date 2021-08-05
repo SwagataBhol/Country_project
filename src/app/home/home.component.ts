@@ -13,7 +13,12 @@ import {HttpClient, HttpClientModule} from "@angular/common/http"
 export class HomeComponent implements OnInit,DoCheck {
   
  
-
+  regions:Array<string>=['Africa',
+                          'Asia',
+                          'Americas',
+                          'Europe',
+                          'Oceania',
+                          'Polar',]
   ngOnInit(): void {
   }
   ngDoCheck(){
@@ -48,7 +53,19 @@ export class HomeComponent implements OnInit,DoCheck {
     else{
       event.target.textContent="Dark Mode"
     }
-    // document.documentElement.classList.toggle("darkMode")
+   
+  }
+  selectRegion(region:string){
+    let ind=this.regions.indexOf(region)
+    if(ind>=0){
+    this.data=[]
+    let url=`https://restcountries.eu/rest/v2/region/${region}`
+    
+    this.http.get(url).subscribe(use=>
+      {
+        this.data=use 
+      })
+    }
   }
 
 

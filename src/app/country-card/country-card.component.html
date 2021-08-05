@@ -1,5 +1,5 @@
-
-<div (click)="onClick(index.name)" id="imgdiv" *ngFor="let index of country" >
+<!-- routing -->
+<div (click)="onClick(index.name)" id="imgdiv" *ngFor="let index of country" > 
     <img width=250 [src]="index.flag">
     <div id="description">
        <h4>{{index.name}}</h4>

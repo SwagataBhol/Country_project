@@ -15,5 +15,14 @@
   
   <input #search type="text"  placeholder="search...">
   <button id="searchButton" type="reset" (click)="searchCountry(search.value)">Enter</button>
+
+  <select  #region id="region" placeholder="search by region" >
+    <option value="">search by region</option>
+    <option id="option" *ngFor="let index of regions" >{{index}}</option>
+    
+  </select>
+  <button id="regionButton" type="button" (click)="selectRegion(region.value)">Enter</button>
+
   
   <app-country-card  [country]="data"></app-country-card>
+  

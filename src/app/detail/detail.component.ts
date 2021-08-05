@@ -2,8 +2,6 @@
 import { CommonService } from './../common.service';
 import { Component, OnInit,Input } from '@angular/core';
 import{ActivatedRoute} from '@angular/router'
-import {Observable} from 'rxjs'
-import {country} from "./../type"
 import{Router} from '@angular/router'
 
 @Component({
@@ -13,7 +11,7 @@ import{Router} from '@angular/router'
 })
 export class DetailComponent implements OnInit {
 
-  // country$!: Observable<country>;
+  
   countryDitails:any=[]//data from services
   countryName:any
   countryArray:any
@@ -37,6 +35,17 @@ export class DetailComponent implements OnInit {
   }
   back(){
     this.router.navigate([''])
+  }
+  darkMode(event:any){
+    let e=document.querySelector("html")!
+    e.classList.toggle("darkMode");
+    if(event.target.textContent=="Dark Mode"){
+      event.target.textContent="Light Mode"
+    }
+    else{
+      event.target.textContent="Dark Mode"
+    }
+   
   }
 
 }
