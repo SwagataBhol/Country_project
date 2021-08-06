@@ -3,3 +3,7 @@
     background-color: hsl(207, 26%, 17%);
     color: blanchedalmond;
 }
+body{
+    overflow: hidden;
+    width:100%;
+}

@@ -4,7 +4,7 @@
        Where in the world?
       </h2>
      <h2>
-      <button (click)="darkMode($event)">
+      <button id="dark"(click)="darkMode($event)">
         Dark Mode
       </button>
       
@@ -12,10 +12,11 @@
     </header>
 
   </div>
-  
-  <input #search type="text"  placeholder="search...">
-  <button id="searchButton" type="reset" (click)="searchCountry(search.value)">Enter</button>
+  <!-- searching -->
+  <input id="searching" #search type="text"  placeholder="search...">
+  <button id="searchButton" type="button" (click)="searchCountry(search.value)">Enter</button>
 
+  <!-- filtering -->
   <select  #region id="region" placeholder="search by region" >
     <option value="">search by region</option>
     <option id="option" *ngFor="let index of regions" >{{index}}</option>

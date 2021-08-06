@@ -1,7 +1,8 @@
 header{
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 20%;
+    box-shadow: -1px -1px 1px 1px gray;
 }
 h2{
     margin: 2%;
@@ -14,16 +15,17 @@ h2{
     border:solid inherit;
 }
 #back{
-    background: transparent;
+   
     height: 35px;
     width:55px;
     border: none;
     margin-top: 1%;
     margin-left: 1%;
-    box-shadow: 0px -2px 5px 5px inherit;
+    box-shadow: 0px -1px 3px 3px gray;
     color:inherit;
     font-size: 17px;
-    border:solid black;
+   
+    background-color: inherit;
     
     
 }
@@ -57,4 +59,43 @@ img{
     background-color: Transparent;
     border: none;
     color:inherit
+}
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    #detail{
+        margin-top: 10%;
+        flex-direction: column;
+        padding-left: 6%;
+        min-width: 320px;
+        /* height:700px */
+         
+    }
+    img{
+        width:260px
+    }
+    #country{
+        flex-direction: column;
+        padding:0px;
+
+    }
+    #right{
+        padding:0px;
+        margin-left:2%;
+       
+    }
+    #left{
+        padding:0px;
+        margin:2%;
+    }
+    header{
+        width:75%;
+    }
+    #back{
+        margin-top: 5%;
+    }
+
+    
 }

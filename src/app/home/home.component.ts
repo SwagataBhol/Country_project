@@ -1,8 +1,8 @@
 
 import { CommonService } from './../common.service';
-import { Component, OnInit,DoCheck} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {HttpClient, HttpClientModule} from "@angular/common/http"
-
+ 
 
 
 @Component({
@@ -10,7 +10,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http"
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit,DoCheck {
+export class HomeComponent implements OnInit {
   
  
   regions:Array<string>=['Africa',
@@ -21,9 +21,7 @@ export class HomeComponent implements OnInit,DoCheck {
                           'Polar',]
   ngOnInit(): void {
   }
-  ngDoCheck(){
-    this.data=this.data
-  }
+  
   data:any
   constructor(private userData:CommonService,private http:HttpClient){
     this.userData.getData().subscribe(use=>
@@ -46,9 +44,10 @@ export class HomeComponent implements OnInit,DoCheck {
   }
   darkMode(event:any){
     let e=document.querySelector("html")!
-    e.classList.toggle("darkMode");
+   let result= e.classList.toggle("darkMode");
     if(event.target.textContent=="Dark Mode"){
       event.target.textContent="Light Mode"
+      console.log(result)
     }
     else{
       event.target.textContent="Dark Mode"
@@ -67,6 +66,4 @@ export class HomeComponent implements OnInit,DoCheck {
       })
     }
   }
-
-
 }
